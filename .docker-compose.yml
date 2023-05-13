@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  container_name: teste-docker
+  restart: always
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    command: "yarn start"
